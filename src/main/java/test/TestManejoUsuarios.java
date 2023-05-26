@@ -11,9 +11,11 @@ public class TestManejoUsuarios {
         
         UsuarioDAO usuarioDao =  new UsuarioDAO();
         
-        Usuario usuarioInsertar =  new Usuario("luis.gonz","234");
+        //Usuario usuarioInsertar =  new Usuario("luis.gonz","234");
         
-        System.out.println("Numero de usuarios insertados: " + usuarioDao.insertar(usuarioInsertar));
+        Usuario usuarioEliminar = new Usuario(3);
+        
+        System.out.println("Numero de usuarios eliminados: " + usuarioDao.eliminar(usuarioEliminar));
     
         List<Usuario> usuarios = usuarioDao.seleccionar();
     
